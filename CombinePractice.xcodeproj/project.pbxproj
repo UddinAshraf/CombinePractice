@@ -15,6 +15,7 @@
 		DC73EF992664C08200A80952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC73EF972664C08200A80952 /* LaunchScreen.storyboard */; };
 		DC73EFA42664C08200A80952 /* CombinePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFA32664C08200A80952 /* CombinePracticeTests.swift */; };
 		DC73EFAF2664C08200A80952 /* CombinePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFAE2664C08200A80952 /* CombinePracticeUITests.swift */; };
+		DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DC73EFAA2664C08200A80952 /* CombinePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombinePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC73EFAE2664C08200A80952 /* CombinePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePracticeUITests.swift; sourceTree = "<group>"; };
 		DC73EFB02664C08200A80952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DC73EF8B2664C07E00A80952 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				DC73EFBF2664C13400A80952 /* Input Validation */,
 				DC73EF8C2664C07E00A80952 /* AppDelegate.swift */,
 				DC73EF8E2664C07E00A80952 /* SceneDelegate.swift */,
 				DC73EF902664C07E00A80952 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				DC73EFB02664C08200A80952 /* Info.plist */,
 			);
 			path = CombinePracticeUITests;
+			sourceTree = "<group>";
+		};
+		DC73EFBF2664C13400A80952 /* Input Validation */ = {
+			isa = PBXGroup;
+			children = (
+				DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */,
+			);
+			path = "Input Validation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */,
 				DC73EF912664C07E00A80952 /* ViewController.swift in Sources */,
 				DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */,
 				DC73EF8F2664C07E00A80952 /* SceneDelegate.swift in Sources */,
