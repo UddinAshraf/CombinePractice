@@ -16,6 +16,7 @@
 		DC73EFA42664C08200A80952 /* CombinePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFA32664C08200A80952 /* CombinePracticeTests.swift */; };
 		DC73EFAF2664C08200A80952 /* CombinePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFAE2664C08200A80952 /* CombinePracticeUITests.swift */; };
 		DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */; };
+		DC8BDEEE266D0EB800DBF163 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8BDEED266D0EB800DBF163 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DC73EFAE2664C08200A80952 /* CombinePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePracticeUITests.swift; sourceTree = "<group>"; };
 		DC73EFB02664C08200A80952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidationViewController.swift; sourceTree = "<group>"; };
+		DC8BDEED266D0EB800DBF163 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,8 @@
 		DC73EF8B2664C07E00A80952 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				DC8BDEEC266D0E4000DBF163 /* DataTaskPublisher */,
+				DC8BDEEB266CD49600DBF163 /* Future */,
 				DC73EFBF2664C13400A80952 /* Input Validation */,
 				DC73EF8C2664C07E00A80952 /* AppDelegate.swift */,
 				DC73EF8E2664C07E00A80952 /* SceneDelegate.swift */,
@@ -137,6 +141,21 @@
 				DC73EFC32664C18D00A80952 /* InputValidationViewController.swift */,
 			);
 			path = "Input Validation";
+			sourceTree = "<group>";
+		};
+		DC8BDEEB266CD49600DBF163 /* Future */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Future;
+			sourceTree = "<group>";
+		};
+		DC8BDEEC266D0E4000DBF163 /* DataTaskPublisher */ = {
+			isa = PBXGroup;
+			children = (
+				DC8BDEED266D0EB800DBF163 /* File.swift */,
+			);
+			path = DataTaskPublisher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8BDEEE266D0EB800DBF163 /* File.swift in Sources */,
 				DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */,
 				DC73EF912664C07E00A80952 /* ViewController.swift in Sources */,
 				DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */,
