@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2987A5268C408300F22171 /* AsyncCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2987A4268C408300F22171 /* AsyncCoordinatorViewController.swift */; };
 		DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EF8C2664C07E00A80952 /* AppDelegate.swift */; };
 		DC73EF8F2664C07E00A80952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EF8E2664C07E00A80952 /* SceneDelegate.swift */; };
 		DC73EF912664C07E00A80952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EF902664C07E00A80952 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC2987A4268C408300F22171 /* AsyncCoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCoordinatorViewController.swift; sourceTree = "<group>"; };
 		DC73EF892664C07E00A80952 /* CombinePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC73EF8C2664C07E00A80952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC73EF8E2664C07E00A80952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC29879B268C3D5A00F22171 /* Sequencing asynchronous operations */ = {
+			isa = PBXGroup;
+			children = (
+				DC2987A4268C408300F22171 /* AsyncCoordinatorViewController.swift */,
+			);
+			path = "Sequencing asynchronous operations";
+			sourceTree = "<group>";
+		};
 		DC73EF802664C07E00A80952 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		DC73EF8B2664C07E00A80952 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				DC29879B268C3D5A00F22171 /* Sequencing asynchronous operations */,
 				DC8BDEEC266D0E4000DBF163 /* DataTaskPublisher */,
 				DC8BDEEB266CD49600DBF163 /* Future */,
 				DC73EFBF2664C13400A80952 /* Input Validation */,
@@ -292,6 +303,7 @@
 				DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */,
 				DC73EF912664C07E00A80952 /* ViewController.swift in Sources */,
 				DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */,
+				DC2987A5268C408300F22171 /* AsyncCoordinatorViewController.swift in Sources */,
 				DC73EF8F2664C07E00A80952 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
