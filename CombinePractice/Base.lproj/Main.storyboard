@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U7Q-ZU-qjK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4lJ-ZS-hR9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -246,6 +246,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7W-Zb-PNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="362.31884057971018" y="-599.33035714285711"/>
+        </scene>
+        <!--Github User View Controller-->
+        <scene sceneID="WcU-yy-w22">
+            <objects>
+                <viewController id="4lJ-ZS-hR9" customClass="GithubUserViewController" customModule="CombinePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sND-54-iS5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3wo-L3-t0U">
+                                <rect key="frame" x="20" y="428" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bZm-as-9DH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UTr-hc-d6w">
+                                <rect key="frame" x="157" y="64" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BYc-WW-SSe"/>
+                                    <constraint firstAttribute="width" constant="100" id="iIz-c1-7B1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-2P-qbW">
+                                <rect key="frame" x="20" y="387" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYB-YU-jlq">
+                                <rect key="frame" x="189" y="387" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7xj-U3-rTe">
+                                <rect key="frame" x="197" y="104" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.90980392160000001" green="0.41568627450000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hNf-Bz-ehw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gzv-2P-qbW" firstAttribute="leading" secondItem="3wo-L3-t0U" secondAttribute="leading" id="0QX-Sd-iVC"/>
+                            <constraint firstItem="3wo-L3-t0U" firstAttribute="centerY" secondItem="hNf-Bz-ehw" secondAttribute="centerY" id="0cB-XD-nZi"/>
+                            <constraint firstItem="UTr-hc-d6w" firstAttribute="top" secondItem="hNf-Bz-ehw" secondAttribute="top" constant="20" id="FHl-cb-nfG"/>
+                            <constraint firstItem="eYB-YU-jlq" firstAttribute="leading" secondItem="gzv-2P-qbW" secondAttribute="trailing" constant="124" id="K99-E8-bpR"/>
+                            <constraint firstItem="3wo-L3-t0U" firstAttribute="top" secondItem="gzv-2P-qbW" secondAttribute="bottom" constant="20" id="TwO-IE-s2r"/>
+                            <constraint firstItem="3wo-L3-t0U" firstAttribute="leading" secondItem="hNf-Bz-ehw" secondAttribute="leading" constant="20" id="dhA-06-wLi"/>
+                            <constraint firstItem="eYB-YU-jlq" firstAttribute="centerY" secondItem="gzv-2P-qbW" secondAttribute="centerY" id="kM9-u0-RVf"/>
+                            <constraint firstItem="UTr-hc-d6w" firstAttribute="centerX" secondItem="hNf-Bz-ehw" secondAttribute="centerX" id="lp7-hz-DR4"/>
+                            <constraint firstItem="hNf-Bz-ehw" firstAttribute="trailing" secondItem="3wo-L3-t0U" secondAttribute="trailing" constant="20" id="vv1-G4-MTQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7xj-U3-rTe" id="ObU-bx-6hg"/>
+                        <outlet property="githubAvatarImageView" destination="UTr-hc-d6w" id="qqd-nU-w2m"/>
+                        <outlet property="githubIdTextField" destination="3wo-L3-t0U" id="08E-rk-Ava"/>
+                        <outlet property="repositoryCountLabel" destination="eYB-YU-jlq" id="mub-cR-zno"/>
+                        <outlet property="userNameLabel" destination="gzv-2P-qbW" id="bDJ-QS-nT8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrT-eh-BQm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001.4492753623189" y="-599.33035714285711"/>
         </scene>
     </scenes>
     <resources>
