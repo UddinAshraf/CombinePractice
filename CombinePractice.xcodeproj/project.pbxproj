@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC06484F2738FBE7000C1372 /* InputFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06484E2738FBE7000C1372 /* InputFormViewController.swift */; };
 		DC2987A5268C408300F22171 /* AsyncCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2987A4268C408300F22171 /* AsyncCoordinatorViewController.swift */; };
 		DC51E56D268D946700253569 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51E56C268D946700253569 /* File.swift */; };
 		DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73EF8C2664C07E00A80952 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC06484E2738FBE7000C1372 /* InputFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFormViewController.swift; sourceTree = "<group>"; };
 		DC2987A4268C408300F22171 /* AsyncCoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCoordinatorViewController.swift; sourceTree = "<group>"; };
 		DC51E56C268D946700253569 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DC73EF892664C07E00A80952 /* CombinePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC06484D2738F8B7000C1372 /* Merging Multiple Pipelines */ = {
+			isa = PBXGroup;
+			children = (
+				DC06484E2738FBE7000C1372 /* InputFormViewController.swift */,
+			);
+			path = "Merging Multiple Pipelines";
+			sourceTree = "<group>";
+		};
 		DC29879B268C3D5A00F22171 /* Sequencing asynchronous operations */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		DC73EF8B2664C07E00A80952 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				DC06484D2738F8B7000C1372 /* Merging Multiple Pipelines */,
 				DCA96C9C27120CC4001C810A /* UIKit-Combine */,
 				DC29879B268C3D5A00F22171 /* Sequencing asynchronous operations */,
 				DC8BDEEC266D0E4000DBF163 /* DataTaskPublisher */,
@@ -320,6 +331,7 @@
 				DC73EFC42664C18D00A80952 /* InputValidationViewController.swift in Sources */,
 				DCA96CA027121D27001C810A /* GithubUserViewController.swift in Sources */,
 				DC73EF912664C07E00A80952 /* ViewController.swift in Sources */,
+				DC06484F2738FBE7000C1372 /* InputFormViewController.swift in Sources */,
 				DC73EF8D2664C07E00A80952 /* AppDelegate.swift in Sources */,
 				DC2987A5268C408300F22171 /* AsyncCoordinatorViewController.swift in Sources */,
 				DCA96C9E27120D66001C810A /* GithubApi.swift in Sources */,

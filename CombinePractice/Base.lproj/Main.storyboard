@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4lJ-ZS-hR9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Ej-lJ-Jtq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,6 +23,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-432" y="80"/>
+        </scene>
+        <!--Input Form View Controller-->
+        <scene sceneID="HNh-Dn-vl9">
+            <objects>
+                <viewController id="6Ej-lJ-Jtq" customClass="InputFormViewController" customModule="CombinePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FE8-1i-fZW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ahf-xj-eXo">
+                                <rect key="frame" x="20" y="64" width="374" height="290"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gog-od-AUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="S75-gW-bTB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy7-rU-jZi">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0i6-uC-VVz">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="q5M-jO-odx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hxb-SX-BuX">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Odf-Th-mE9">
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5BT-Md-LMY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-yf-kTp">
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C6X-IP-Ebo"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JPS-gl-0Mg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JPS-gl-0Mg" firstAttribute="trailing" secondItem="Ahf-xj-eXo" secondAttribute="trailing" constant="20" id="5IZ-DZ-1Fg"/>
+                            <constraint firstItem="Ahf-xj-eXo" firstAttribute="leading" secondItem="JPS-gl-0Mg" secondAttribute="leading" constant="20" id="AAL-ES-SXa"/>
+                            <constraint firstItem="OwA-yf-kTp" firstAttribute="leading" secondItem="JPS-gl-0Mg" secondAttribute="leading" constant="20" id="HI2-TW-ii1"/>
+                            <constraint firstItem="Ahf-xj-eXo" firstAttribute="top" secondItem="JPS-gl-0Mg" secondAttribute="top" constant="20" id="MPE-fa-1wV"/>
+                            <constraint firstItem="JPS-gl-0Mg" firstAttribute="trailing" secondItem="OwA-yf-kTp" secondAttribute="trailing" constant="20" id="QSM-Jn-AQO"/>
+                            <constraint firstItem="JPS-gl-0Mg" firstAttribute="bottom" secondItem="OwA-yf-kTp" secondAttribute="bottom" constant="50" id="s4u-Wy-JP5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="Odf-Th-mE9" id="a8N-d4-P9X"/>
+                        <outlet property="passwordMessageLabel" destination="hxb-SX-BuX" id="riU-01-GFp"/>
+                        <outlet property="passwordTextField" destination="0i6-uC-VVz" id="Z0X-86-9V0"/>
+                        <outlet property="submitButton" destination="OwA-yf-kTp" id="9u6-MI-So5"/>
+                        <outlet property="usernameMessagelabel" destination="Jy7-rU-jZi" id="tM9-tS-kfG"/>
+                        <outlet property="usernameTextField" destination="Gog-od-AUG" id="HCT-wY-GTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6L-Tn-8qm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327.536231884058" y="79.6875"/>
         </scene>
         <!--Input Validation View Controller-->
         <scene sceneID="fUA-1H-SoZ">
